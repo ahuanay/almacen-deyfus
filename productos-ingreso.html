@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deyfus | Nuevo Producto</title>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://bootswatch.com/4/cerulean/bootstrap.min.css" id="theme">
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <script src="https://kit.fontawesome.com/c7230525bf.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark" style="background-color: #e3f2fd;">
+        <a class="navbar-brand" href="#"><img src="/assets/imagenes/logo.jpg" class="img-logo" alt="Deyfus"></a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"><i
+                class="fas fa-bars"></i></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="/home.html">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/modelos.html">Modelos</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/productos-ingreso.html">Productos Ingreso</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/productos.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/productos-egreso.html">Productos Egreso</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li class="nav-item" style="margin: 2px;">
+                    <button type="button" class="btn btn-dark m-1" id="modo_oscuro">
+                        <i class="fas fa-adjust"></i>
+                    </button>
+                    <button type="button" class="btn btn-light m-1" id="modo_normal" style="display: none;">
+                        <i class="fas fa-adjust"></i>
+                    </button>
+                    <a href="alertas.html" class="btn btn-danger m-1">
+                        <i class="fas fa-bell"></i> <span class="badge badge-light">0</span>
+                    </a>
+                </li>
+                <li class="nav-item" style="margin: 6px;">
+                    <select class="form-control" id="tienda" name="tienda">
+                        <option value="1">Cajamarca</option>
+                        <option value="2">Open Plaza</option>
+                    </select>
+                </li>
+                <li class="nav-item dropdown" style="margin: 2px;">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <img src="/assets/imagenes/perfiles/avatar-default.jpg" class="img-perfil"> GINA THALIA DE LA
+                        CRUZ HUAMANI
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="">Mi Perfil</a>
+                        <hr>
+                        <a class="dropdown-item" href="/index.html">Cerrar Sesión</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="col-md-12 mt-4 mr-auto ml-auto p-4 container-form">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1 class="text-center">PRODUCTOS INGRESO</h1>
+                            <hr>
+                        </div>
+                        <div class="col-8 col-md-6">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="buscar...">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-secondary" type="button" id="search"><i
+                                                class="fas fa-search"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 col-md-2 ml-auto">
+                            <button type="button" class="btn btn-primary btn-block" data-toggle="modal"
+                                data-target="#md_agregar_modelo" data-backdrop="static" data-keyboard="false">
+                                Nuevo
+                            </button>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="table-responsive mt-4">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 5%;">N°</th>
+                                            <th style="width: 15%;">Fecha Hora</th>
+                                            <th style="width: 15%;">Modelo</th>
+                                            <th style="width: 10%;">Cuero</th>
+                                            <th style="width: 10%;">Color</th>
+                                            <th style="width: 10%;">Categoria</th>
+                                            <th style="width: 5%;">Talla</th>
+                                            <th style="width: 10%;">Stock I.</th>
+                                            <th style="width: 20%;"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td scope="row">1</td>
+                                            <td>15/06/2020 12:35</td>
+                                            <td>angui-b-500</td>
+                                            <td>Jirafa</td>
+                                            <td>negro</td>
+                                            <td>Caballero</td>
+                                            <td>37</td>
+                                            <td>5</td>
+                                            <td>
+                                                <button type="submit" class="btn btn-info btn-sm m-1 disabled"
+                                                    style="width: 80px;">Editar</button>
+                                                <button type="submit" class="btn btn-danger btn-sm m-1 disabled"
+                                                    style="width: 80px;">Eliminar</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">2</td>
+                                            <td>15/05/2020 12:35</td>
+                                            <td>angui-b-500</td>
+                                            <td>Jirafa</td>
+                                            <td>negro</td>
+                                            <td>Caballero</td>
+                                            <td>37</td>
+                                            <td>5</td>
+                                            <td>
+                                                <button type="submit" class="btn btn-info btn-sm m-1 disabled"
+                                                    style="width: 80px;">Editar</button>
+                                                <button type="submit" class="btn btn-danger btn-sm m-1 disabled"
+                                                    style="width: 80px;">Eliminar</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">3</td>
+                                            <td>15/05/2020 12:35</td>
+                                            <td>angui-b-500</td>
+                                            <td>Jirafa</td>
+                                            <td>negro</td>
+                                            <td>Caballero</td>
+                                            <td>38</td>
+                                            <td>4</td>
+                                            <td>
+                                                <button type="submit" class="btn btn-info btn-sm m-1 disabled"
+                                                    style="width: 80px;">Editar</button>
+                                                <button type="submit" class="btn btn-danger btn-sm m-1 disabled"
+                                                    style="width: 80px;">Eliminar</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 ">
+                    <div class="row">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="navbar-dark bg-dark pt-5">
+        <div class="container-fluid text-center text-md-left">
+            <div class="row">
+                <div class="col-md-6 mt-md-0 mt-3">
+                    <h5 class="text-uppercase">DEYFUS</h5>
+                    <p style="color: rgba(255,255,255,0.8);">El cuero que va contigo. Disfruta la moda en tus pies</p>
+
+                </div>
+                <hr class="clearfix w-100 d-md-none pb-3">
+                <div class="col-md-3 mb-md-0 mb-3">
+                    <h5 class="text-uppercase">REDES SOCIALES</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="https://www.facebook.com/deyfus/" class="link"><i class="fa fa-facebook" aria-hidden="true"></i> Siganos en Facebook</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-3" style="color: rgb(255,255,255);">&copy; 2020 Copyright: GINA THALIA DE LA CRUZ HUAMANI</div>
+    </footer>
+    
+    <div class="modal fade" id="md_agregar_modelo" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Nuevo Ingreso de Producto</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <form action="" method="post">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="tipo_cuero">Modelo</label>
+                                                        <input type="text" class="form-control" name="modelo" id="modelo"
+                                                            placeholder="busca ...">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="categoria">Categoría</label>
+                                                        <select class="form-control" name="categoria" id="categoria">
+                                                            <option value="">Seleccione</option>
+                                                            <option value="c">Caballero</option>
+                                                            <option value="d">Dama</option>
+                                                            <option value="n">Niño</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="tipo_cuero">Tipo de Cuero</label>
+                                                        <input type="text" class="form-control" name="tipo_cuero" id="tipo_cuero"
+                                                            placeholder="busca ...">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="color">Color</label>
+                                                        <input type="text" class="form-control" name="color" id="color"
+                                                            placeholder="busca ...">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="precio">Precio</label>
+                                                        <input type="number" class="form-control" name="precio"
+                                                            id="precio" min="1" placeholder="precio">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="table-responsive mt-4 mb-4">
+                                                        <table class="table table-hover">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>37</th>
+                                                                    <th>38</th>
+                                                                    <th>39</th>
+                                                                    <th>40</th>
+                                                                    <th>41</th>
+                                                                    <th>42</th>
+                                                                </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td><input type="number" class="form-control" style="width: 70px;" name="" id=""></td>
+                                                                        <td><input type="number" class="form-control" style="width: 70px;" name="" id=""></td>
+                                                                        <td><input type="number" class="form-control" style="width: 70px;" name="" id=""></td>
+                                                                        <td><input type="number" class="form-control" style="width: 70px;" name="" id=""></td>
+                                                                        <td><input type="number" class="form-control" style="width: 70px;" name="" id=""></td>
+                                                                        <td><input type="number" class="form-control" style="width: 70px;" name="" id=""></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 d-flex justify-content-center align-items-center">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <div class="contenedor-imagen-modelo">
+                                                            <img src="/assets/imagenes/images.png" class="imagen-modelo">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Guardar</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script src="/assets/js/script.js"></script>
+</body>
+
+</html>

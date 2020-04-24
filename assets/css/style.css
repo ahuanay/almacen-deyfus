@@ -1,0 +1,204 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+.container {
+    margin-bottom: 200px;
+}
+
+footer {
+    position: absolute;
+    top: 100;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+}
+
+.body_login {
+    background-image: url('/assets/imagenes/fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-weight: 900;
+}
+
+.login {
+    background: rgba(36, 36, 36, 0.5);
+    border-radius: 10px;
+    margin-top: 100px;
+}
+
+.login label {
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+}
+
+.login input {
+    background: transparent;
+}
+
+.login input::placeholder {
+    color: rgb(180, 180, 180);
+}
+
+.img-logo {
+    width: 30px;
+    height: 30px;
+}
+
+.img-perfil {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.producto {
+    height: 20rem;
+    border: 0px solid #000000;
+    border-radius: 16px 16px 16px 16px;
+    -moz-border-radius: 16px 16px 16px 16px;
+    -webkit-border-radius: 16px 16px 16px 16px;
+    box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.5);
+}
+
+.informacion-info {
+    border: 0px solid #000000;
+    border-radius: 16px 16px 16px 16px;
+    -moz-border-radius: 16px 16px 16px 16px;
+    -webkit-border-radius: 16px 16px 16px 16px;
+    box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.5);
+    border-left: 5px solid #189ce2;
+}
+
+.informacion-info .title-info a {
+    color: #189ce2;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.informacion-info .title-info a:hover {
+    color: #1283bf;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.informacion-info .value-info {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.informacion-danger {
+    border: 0px solid #000000;
+    border-radius: 16px 16px 16px 16px;
+    -moz-border-radius: 16px 16px 16px 16px;
+    -webkit-border-radius: 16px 16px 16px 16px;
+    box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.5);
+    border-left: 5px solid #dd3d31;
+}
+
+.informacion-danger .title-info a {
+    color: #dd3d31;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.informacion-danger .title-info a:hover {
+    color: #c5352a;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.informacion-danger .value-info {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.container-form {
+    border: 0px solid #000000;
+    border-radius: 16px 16px 16px 16px;
+    -moz-border-radius: 16px 16px 16px 16px;
+    -webkit-border-radius: 16px 16px 16px 16px;
+    box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.5);
+}
+
+.contenedor-imagen-modelo {
+    width: 300px;
+    height: 150px;
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.imagen-modelo {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+
+}
+
+body::-webkit-scrollbar {
+    width: 7px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #033d75;
+    border-radius: 5px;
+}
+
+.table-responsive::-webkit-scrollbar {
+    height: 7px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+    background: #033d75;
+    border-radius: 5px;
+}
+
+.nav-item select {
+    background: transparent;
+    border: none;
+    padding: 0;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.nav-item select option {
+    color: rgb(0, 0, 0);
+}
+
+.nav-item select:hover {
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.nav-item select:focus {
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.8);
+    outline: none;
+}
+
+.img-slide {
+    height: 600px;
+}
+
+@media (max-width: 768px) {
+    .img-slide {
+        height: 300px;
+    }
+}
